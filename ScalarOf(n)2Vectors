@@ -4,8 +4,7 @@ using namespace std;
 
 int main()
 {
-    int x, y, n;
-    float scalX, scalY, scal;
+    int x, y, n, scal;
 
     printf("Enter vector space : ");
     scanf("%d", &n);
@@ -15,14 +14,12 @@ int main()
 
         printf("X : ");
         scanf("%d", &x);
-        scalX += x;
 
         printf("Y : ");
         scanf("%d", &y);
-        scalY += y;
+        scal += y*x;
 
     }
 
-    scal = sqrt(pow(scalX, 2)+ pow(scalY, 2));
     printf("Scalar : %f", scal);
 }

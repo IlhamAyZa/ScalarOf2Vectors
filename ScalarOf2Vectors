@@ -21,7 +21,7 @@ int main()
     printf("Y : ");
     scanf("%d", y2);
 
-    scal = sqrt((x1+x2)**2 + (y1+y2)**2);
+    scal = sqrt(pow((x1+x2), 2)+ pow((y1+y2), 2));
     printf("Scalar : %f", scal);
 
 }

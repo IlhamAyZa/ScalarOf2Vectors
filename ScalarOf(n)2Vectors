@@ -10,7 +10,7 @@ int main()
     printf("Enter vector space : ");
     scanf("%d", &n);
 
-    for (int i = 0; i < n, i++){
+    for (int i = 0; i < n; i++){
         printf("Enter X and Y for the vector => \n");
 
         printf("X : ");

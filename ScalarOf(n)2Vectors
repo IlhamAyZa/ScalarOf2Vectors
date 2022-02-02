@@ -4,22 +4,29 @@ using namespace std;
 
 int main()
 {
-    int x, y, n, scal;
+    int x, n;
+    float scal;
 
     printf("Enter vector space : ");
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++){
-        printf("Enter X and Y for the vector => \n");
+    int components[n];
 
-        printf("X : ");
+
+    printf("Enter components for the 1st vector => \n");
+
+    for (int j =0; j < n; j++){
+        scanf("%d", &components[j]);
+    }
+
+    printf("Enter components for the 2nd vector => \n");
+
+    for (int i =0; i < n; i++){
         scanf("%d", &x);
-
-        printf("Y : ");
-        scanf("%d", &y);
-        scal += y*x;
-
+        scal += x * components[i];
     }
 
     printf("Scalar : %f", scal);
+
+    return 0;
 }
